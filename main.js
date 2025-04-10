@@ -30,14 +30,25 @@
 //   console.log(BMI + " Sizda ortiqcha vazn bor, dietiga etbor bering!");
 // }
 
-function factorial(num){
-    let sum=1
-    for (let i=1;i<=num;i++){
-        sum=sum*i
-    }
-    return sum
+// function factorial(num){
+//     let sum=1
+//     for (let i=1;i<=num;i++){
+//         sum=sum*i
+//     }
+//     return sum
+// }
+
+// const userInput=parseInt(prompt("Factrial Number"));
+// const res=factorial(userInput);
+// console.log(res)
+
+function check(num){
+    sum=0
+    for(let i=num;i<=100;i+=num){
+        console.log(i)
+        sum+=i
+    }console.log("="+sum)
 }
 
-const userInput=parseInt(prompt("Factrial Number"));
-const res=factorial(userInput);
-console.log(res)
+const num1=parseInt(prompt("Son kiriting:"))
+check(num1)
