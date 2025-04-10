@@ -14,18 +14,30 @@
 //   console.log(res);
 // }
 
-const vazn = parseFloat(prompt("Vazningizni kiriitng?"));
-const boy = parseInt(prompt("Bo'yingizni kiriting?"));
+// const vazn = parseFloat(prompt("Vazningizni kiriitng?"));
+// const boy = parseInt(prompt("Bo'yingizni kiriting?"));
 
-BMI = vazn / ((boy * boy) / 10000);
+// BMI = vazn / ((boy * boy) / 10000);
 
-if (BMI < 18.5) {
-  console.log(BMI + "Sizda vazn kamligi bor,ko'proq ovqatlaning!");
-} else if (18.5 <= BMI && BMI < 25) {
-  console.log(BMI + " Siz sog'lom vazndasiz");
-} else if (25 <= BMI && BMI < 30) {
-  console.log(
-    BMI + " Sizda ozgina ortiqcha vazn bor, Sport bilan shug'ulaning");
-} else if (BMI >= 30) {
-  console.log(BMI + " Sizda ortiqcha vazn bor, dietiga etbor bering!");
+// if (BMI < 18.5) {
+//   console.log(BMI + "Sizda vazn kamligi bor,ko'proq ovqatlaning!");
+// } else if (18.5 <= BMI && BMI < 25) {
+//   console.log(BMI + " Siz sog'lom vazndasiz");
+// } else if (25 <= BMI && BMI < 30) {
+//   console.log(
+//     BMI + " Sizda ozgina ortiqcha vazn bor, Sport bilan shug'ulaning");
+// } else if (BMI >= 30) {
+//   console.log(BMI + " Sizda ortiqcha vazn bor, dietiga etbor bering!");
+// }
+
+function factorial(num){
+    let sum=1
+    for (let i=1;i<=num;i++){
+        sum=sum*i
+    }
+    return sum
 }
+
+const userInput=parseInt(prompt("Factrial Number"));
+const res=factorial(userInput);
+console.log(res)
